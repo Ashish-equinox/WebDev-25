@@ -26,3 +26,26 @@ function sumAll(...numbers) {
     }
     return sum;
 }
+
+//we will use rest on an object now ; Object → basic key–value store (keys mostly strings) ; Map → advanced key–value store (any key type, better iteration, ordered).
+
+function objPrint(...array) {
+    array.forEach((obj) => {
+        // print key pairs of each object present in array
+        for (let key in obj) {
+            console.log(key);
+        }
+        console.log("-------------------");
+    });
+}
+
+
+//fn call
+objPrint(
+    {name:"name1", age:20, rollno:101, marks:100, school:"school1", city:"city1"},
+
+    {name:"name2", age:21, rollno:102, marks:90, school:"school2", city:"city2"},
+
+    {islogged: true}
+
+);
